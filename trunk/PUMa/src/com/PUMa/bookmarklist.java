@@ -9,34 +9,38 @@ import android.widget.Button;
 
 public class bookmarklist extends Activity implements OnClickListener{
 
-	Button ViewMapButton, GroupButton, GetDirectionsButton;
+	Button ViewMapButtonBM,GroupsButtonBM,GetDirectionsButtonBM;
 	@Override
 	public void onCreate(Bundle savedInstanceState) 
 	    {
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.bml);
 	        
-	        ViewMapButton = (Button)findViewById(R.id.ViewMapButtonBM);
-	        GroupButton = (Button)findViewById(R.id.GroupsButtonBM);
-	        GetDirectionsButton = (Button)findViewById(R.id.GetDirectionsButtonBM);
+	        ViewMapButtonBM = (Button)findViewById(R.id.ViewMapButtonBM);
+	        GroupsButtonBM = (Button)findViewById(R.id.GroupsButtonBM);
+	        GetDirectionsButtonBM = (Button)findViewById(R.id.GetDirectionsButtonBM);
+	        
+	       ViewMapButtonBM.setOnClickListener(this);
+           GroupsButtonBM.setOnClickListener(this);
+           GetDirectionsButtonBM.setOnClickListener(this);
 	        
 	    }
-	public void onClick(View screen3bm) {
-		switch(screen3bm.getId())
+	public void onClick(View ss) {
+		switch(ss.getId())
 		{
 		case R.id.ViewMapButtonBM:
-			Intent i1=new Intent(this,viewmap.class);
-	    	startActivity(i1);
+			Intent i4=new Intent(this,viewmap.class);
+	    	startActivity(i4);
 	    	break;
 	    	
 		case R.id.GroupsButtonBM:
-			Intent i2=new Intent(this,groupbm.class);
-	    	startActivity(i2);
+			Intent i5=new Intent(this,groupbm.class);
+	    	startActivity(i5);
 	    	break;
 	    	
 		case R.id.GetDirectionsButtonBM:
-			Intent i3=new Intent(this,getdirections.class);
-	    	startActivity(i3);
+			Intent i6=new Intent(this,getdirections.class);
+	    	startActivity(i6);
 	    	break;
 		}
 		// TODO Auto-generated method stub

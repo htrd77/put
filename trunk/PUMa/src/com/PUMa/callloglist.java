@@ -20,6 +20,10 @@ public class callloglist extends Activity implements OnClickListener{
 	        GetDirectionsButtonCL = (Button)findViewById(R.id.GetDirectionsButtonCL);
 	        SaveLocationButtonCL = (Button)findViewById(R.id.SaveLocationButtonCL);
 	        
+	        ViewMapsButtonCL.setOnClickListener(this);
+	        GetDirectionsButtonCL.setOnClickListener(this);
+	        SaveLocationButtonCL.setOnClickListener(this);
+	        
 	    }
 
 	public void onClick(View v) {
