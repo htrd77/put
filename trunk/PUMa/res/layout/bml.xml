@@ -1,47 +1,22 @@
-<LinearLayout 
-android:id="@+id/LinearLayout01" 
-xmlns:android="http://schemas.android.com/apk/res/android" 
-android:layout_width="fill_parent" 
-android:layout_height="60dp">
 
-<LinearLayout 
-android:id="@+id/LinearLayout02" 
-android:layout_height="60dp" 
-android:layout_width="fill_parent">
+<RelativeLayout android:id="@+id/RelativeLayout01"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content" 
+	android:layout_height="wrap_content"
+	android:layout_alignParentTop="true">
+	android:orientation="vertical">
 
+			
+<Button android:text="View Map" 
+		android:id="@+id/ViewMapButtonBM" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content">
+		</Button>
+		
 <Button android:layout_width="wrap_content" 
-android:text="View Map" 
-android:textSize="15sp" 
-android:layout_height="wrap_content" 
-android:layout_weight="0.75" android:id="@+id/ViewMapButtonBM"></Button>
-
-<Button android:layout_width="wrap_content" 
-android:layout_height="wrap_content" 
-android:text="Get Directions" 
-android:textSize="16sp" 
-android:layout_weight="0.75" android:id="@+id/GetDirectionsButtonBM"></Button>
-
-<Button android:layout_width="wrap_content" 
-android:layout_height="wrap_content" 
-android:text="Groups" 
-android:textSize="15sp" 
-android:layout_weight="0.75" android:id="@+id/GroupsButtonBM"></Button>
-
-</LinearLayout>
-
-<RelativeLayout 
-android:id="@+id/RelativeLayout01" 
-android:layout_width="wrap_content" 
-android:layout_height="wrap_content">
-
-<ListView android:id="@+id/ListView01" 
-android:choiceMode="multipleChoice" 
-android:clickable="true" 
-android:listSelector="@drawable/icon" 
-android:layout_height="wrap_content" 
-android:layout_width="wrap_content" 
-android:paddingTop="60dp"></ListView>
-
+		android:text="Groups"
+		android:layout_height="wrap_content" 
+		android:id="@+id/GroupsButtonBM" 
+		android:layout_toRightOf="@+id/ViewMapButtonBM">
+		</Button>
 </RelativeLayout>
-
-</LinearLayout>
