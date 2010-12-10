@@ -26,4 +26,5 @@
 	android:textSize="40sp" 
 	android:layout_width="fill_parent" android:id="@+id/BookmarksButton"></Button>
 
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Start" android:text="Start"></Button>
 </LinearLayout>

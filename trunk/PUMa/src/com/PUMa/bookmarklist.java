@@ -23,7 +23,7 @@ public class bookmarklist extends ListActivity implements OnClickListener{
 	@Override
 	public void onCreate(Bundle savedInstanceState) 
 	    {
-			
+			//
 	        super.onCreate(savedInstanceState);
 	        //setContentView(R.layout.bml);
 	        
@@ -67,24 +67,11 @@ public class bookmarklist extends ListActivity implements OnClickListener{
 
         				}
                 });
-            			
+         			
             
-           /* list.setOnItemClickListener(new OnItemClickListener() {
-
-				@Override
-				public void onItemClick(AdapterView<?> arg0, View view,
-						int position, long id) {*/
-					// TODO Auto-generated method stub
-					//Intent i8=new Intent(null, viewmap.class);
-			    	//startActivity(i8);
-					//Toast.makeText(getApplicationContext(), ((TextView) view).getText(),Toast.LENGTH_SHORT).show();
-					
-				//}
-           
-            	
-            	
-            //});
-	    }
+         }
+	//Getting data from database
+	
 	
 	
 	 static final String[] LIST = new String[] {
