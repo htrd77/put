@@ -24,7 +24,7 @@ public class callloglist extends ListActivity implements OnClickListener {
 
 	String[] LIST_temp = databaseControl.GetPhoneNumbers(table_name);
 	String[] LIST = LIST_temp;
-	
+	//
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 ////
