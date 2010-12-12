@@ -4,9 +4,10 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/images">
     >
 <TextView  
-    android:text="PUM" 
+    android:text="PUMa" 
     android:gravity="center" 
     android:padding="15dp" 
     android:layout_height="wrap_content" 
@@ -26,5 +27,5 @@
 	android:textSize="40sp" 
 	android:layout_width="fill_parent" android:id="@+id/BookmarksButton"></Button>
 
-<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Start" android:text="Start"></Button>
+
 </LinearLayout>
