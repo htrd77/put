@@ -37,52 +37,56 @@ import android.widget.Button;
 		case R.id.FamilyButtonBM:
 			
 			group_ID = "family";
-			for(int i=0; i<selects1.length; i++)
+			for(int i=1; i<selects1.length; i++)
 			{
-				if(selects1[i]>0)
+				if(selects1[i]!=-1)
 				{
-					databaseControl.updateBookmarks(selects1[i], group_ID);
+					databaseControl.updateBookmarks(selects1.length-i, group_ID);
 				}
-				Intent i1=new Intent(this,PUMa.class);
-	        	startActivity(i1);
+				
 			}
+			Intent i1=new Intent(this,PUMa.class);
+        	startActivity(i1);
 			break;
 			
 		case R.id.FriendsButtonBM:
 			group_ID = "friends";
-			for(int i=0; i<selects1.length; i++)
+			for(int i=1; i<selects1.length; i++)
 			{
-				if(selects1[i]>0)
+				if(selects1[i]!=-1)
 				{
-					databaseControl.updateBookmarks(selects1[i], group_ID);
+					databaseControl.updateBookmarks(selects1.length-i, group_ID);
 				}
-				Intent i2=new Intent(this,PUMa.class);
-	        	startActivity(i2);	
+				
 			}
+			Intent i2=new Intent(this,PUMa.class);
+        	startActivity(i2);	
 			break;
 		case R.id.WorkButtonBM:
 			group_ID = "Work";
-			for(int i=0; i<selects1.length; i++)
+			for(int i=1; i<selects1.length; i++)
 			{
-				if(selects1[i]>0)
+				if(selects1[i]!=-1)
 				{
-					databaseControl.updateBookmarks(selects1[i], group_ID);
+					databaseControl.updateBookmarks(selects1.length-i, group_ID);
 				}
-				Intent i3=new Intent(this,PUMa.class);
-	        	startActivity(i3);
+				
 			}
+			Intent i3=new Intent(this,PUMa.class);
+        	startActivity(i3);
 			break;
 		case R.id.OthersButtonBM:
 			group_ID = "Others";
-			for(int i=0; i<selects1.length; i++)
+			for(int i=1; i<selects1.length; i++)
 			{
-				if(selects1[i]>0)
+				if(selects1[i]!=-1)
 				{
-					databaseControl.updateBookmarks(selects1[i], group_ID);
+					databaseControl.updateBookmarks(selects1.length-i, group_ID);
 				}
-				Intent i4=new Intent(this,PUMa.class);
-	        	startActivity(i4);
+				
 			}
+			Intent i4=new Intent(this,PUMa.class);
+        	startActivity(i4);
 			break;
 		}
 		}
