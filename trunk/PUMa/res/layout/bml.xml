@@ -6,7 +6,7 @@
 	android:layout_alignParentTop="true">
 	android:orientation="vertical">
 
-			
+...		
 <Button android:text="View Map" 
 		android:id="@+id/ViewMapButtonBM" 
 		android:layout_width="wrap_content" 
