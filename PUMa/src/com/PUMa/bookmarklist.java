@@ -56,7 +56,7 @@ public class bookmarklist extends ListActivity implements OnClickListener{
             					long arg3) {
             				SparseBooleanArray a;
             				a = getListView().getCheckedItemPositions();
-            				
+            	//			
             				
             				for(int i=0; i<=listlen;i++)
             				{
